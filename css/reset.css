@@ -1,0 +1,99 @@
+/* Обнуление стандартных отступов, полей и границ для всех элементов */
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+/* Установка box-sizing: border-box для всех элементов и их псевдоэлементов */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Стили для ссылок: убрать подчеркивание */
+a, a:link, a:visited {
+    text-decoration: none;
+}
+
+/* Стили для ссылок при наведении */
+a:hover {
+    text-decoration: none;
+}
+
+/* Установка display: block для семантических элементов */
+aside, nav, footer, header, section, main {
+    display: block;
+}
+
+/* Сброс стилей для заголовков и параграфов */
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* Удаление маркеров списка */
+ul, ul li {
+    list-style: none;
+}
+
+/* Вертикальное выравнивание изображений */
+img {
+    vertical-align: top;
+}
+
+/* Ограничение максимальной ширины изображений и SVG */
+img, svg {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Сброс курсива для адреса */
+address {
+    font-style: normal;
+}
+
+/* Стили для форм: наследование шрифта и цвета */
+input, textarea, button, select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+/* Скрытие крестика в поле ввода в IE */
+input::-ms-clear {
+    display: none;
+}
+
+/* Стили для кнопок: убрать тень и фон */
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+/* Убрать outline при фокусе */
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+/* Убрать внутренние отступы для кнопок в Firefox */
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+/* Курсор-указатель для label */
+label {
+    cursor: pointer;
+}
+
+/* Сброс стилей для legend */
+legend {
+    display: block;
+}
